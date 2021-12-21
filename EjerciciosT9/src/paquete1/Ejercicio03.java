@@ -7,7 +7,7 @@ package paquete1;
 
 /**
  *
- * @author reroes
+ * @author JoseGuerrero3
  */
 public class Ejercicio03 {
 
@@ -16,10 +16,35 @@ public class Ejercicio03 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        int[] arreglo = {1, 10, 11, 12, 12, 13, 16, 2, 3, 4, 9, 10, 21};
-        int elementosArribaMedia;
-        int elementosAbajoMedia;
-        
+        double[] arreglo = {1, 10, 11, 12, 12, 13, 16, 2, 3, 4, 9, 10, 21};
+        double elementosArribaMedia = 0;
+        double elementosAbajoMedia = 0;
+        double media;
+        double suma = 0;
+
+        for (int i = 0; i < arreglo.length; i++) {
+            suma = suma + arreglo[i];
+        }
+        for (int i = 0; i < arreglo.length; i++) {
+
+            media = suma / arreglo.length;
+
+            if (arreglo[i] > media) {
+                elementosArribaMedia = elementosArribaMedia + 1;
+
+            } else {
+                if (arreglo[i] < media) {
+                    elementosAbajoMedia = elementosAbajoMedia + 1;
+
+                }
+
+            }
+
+        }
+        System.out.printf("Los Elementos Arriba de la media son %.2f\nLos Elementos "
+                + "debajo de la media son: %.2f\n", elementosArribaMedia,
+                elementosAbajoMedia);
+
     }
 
 }

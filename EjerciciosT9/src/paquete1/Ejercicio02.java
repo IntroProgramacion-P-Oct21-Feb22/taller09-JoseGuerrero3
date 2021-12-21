@@ -7,7 +7,7 @@ package paquete1;
 
 /**
  *
- * @author reroes
+ * @author JoseGuerrero3
  */
 public class Ejercicio02 {
 
@@ -35,7 +35,7 @@ public class Ejercicio02 {
                     } else {
                         if ((respuesta >= 16) && (respuesta <= 20)) {
                             valoresRangos[3] = valoresRangos[3] + 1;
-                        }else{
+                        } else {
                             valoresRangos[4] = valoresRangos[4] + 1;
                         }
 
